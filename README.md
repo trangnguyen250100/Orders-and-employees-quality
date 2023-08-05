@@ -7,5 +7,5 @@ Usage:
 - Speed up the order processing of employees, and reduce wasted time.
   
 Limitations:
-- Deadlines may need to be adjusted and measured on a regular basis to accommodate headcount, worker productivity, and machine speed...
+- Deadlines may need to be adjusted and measured on a regular basis to accommodate headcount, worker productivity...
 
