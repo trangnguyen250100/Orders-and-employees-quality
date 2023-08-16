@@ -16,7 +16,7 @@ FROM (
             END deadline
         FROM test.all_don t
         LEFT JOIN test.deadline d 
-                ON t.id_chi_nhanh = cf.id_chi_nhanh 
+                ON t.id_chi_nhanh = d.id_chi_nhanh 
                 AND 
                     (
                         -- lấy mốc deadline đầu tiên
