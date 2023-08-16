@@ -35,7 +35,7 @@ FROM (
                     )
         ) t
     ) t 
-where rn = 1 -- loại bỏ dữ liệu trùng lặp
+WHERE rn = 1 -- loại bỏ dữ liệu trùng lặp
 ; 
 
 -- Bảng gán người bị phạt với đơn sai, những người này có thời gian xử lý đơn hàng trước/sau mốc deadline đơn bị sai nhưng không xử lý đơn sai thì bị gán phạt
