@@ -12,7 +12,7 @@ FROM (
             CASE 
                 WHEN d.ngay =  CAST(FROM_timestamp(t.tgian_nhap_chi_nhanh, 'yyyyMMdd') AS INT) 
                     AND (CAST(FROM_timestamp(t.tgian_nhap_chi_nhanh, 'HHmm') AS INT) BETWEEN d.tgian_bat_dau AND d.tgian_ket_thuc) then t.deadline
-                ELSE MINUTES_ADD(HOURS_ADD(TRUNC(cf.ngay,'DD'), cf.gio_deadline), cf.phut_deadline)
+                ELSE MINUTES_ADD(HOURS_ADD(TRUNC(d.ngay,'DD'), d.gio_deadline), d.phut_deadline)
             END deadline
         FROM test.all_don t
         LEFT JOIN test.deadline d 
